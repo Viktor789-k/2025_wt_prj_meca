@@ -10,8 +10,7 @@ Aplikace používá Python Virtual Environment, před spuštěním je potřeba v
 python3 -m venv venv
 
 # Windows
-...
-```
+py -3 -m venv venv
 
 Dále je třeba venv aktivovat:
 
