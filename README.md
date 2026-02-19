@@ -25,6 +25,7 @@ source ./venv/Scripts/activate
 # Windows - Power shell
 .\venv\Scripts\Activate.ps1
 
+
 Je třeba ujistit se, že jsou nainstalovány všechny závislosti:
 
 ```bash
