@@ -34,6 +34,8 @@ Je třeba ujistit se, že jsou nainstalovány všechny závislosti:
 pip install -r requirements.txt
 ```
 
+
+
 # ♟️ ChessBase – Databáze šachových partií
 
 ChessBase je webová aplikace vytvořená v Django frameworku, která slouží jako databáze šachových partií. 
