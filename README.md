@@ -32,6 +32,7 @@ Je třeba ujistit se, že jsou nainstalovány všechny závislosti:
 ```bash
 # (venv)$
 pip install -r requirements.txt
+```
 
 # ♟️ ChessBase – Databáze šachových partií
 
