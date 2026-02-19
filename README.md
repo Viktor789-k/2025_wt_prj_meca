@@ -20,11 +20,10 @@ Dále je třeba venv aktivovat:
 source ./venv/bin/activate
 
 # Windows - Bash
-source venv/Scripts/activate
+source ./venv/Scripts/activate
 
 # Windows - Power shell
-.\venv\Scripts\activate
-```
+.\venv\Scripts\Activate.ps1
 
 Je třeba ujistit se, že jsou nainstalovány všechny závislosti:
 
