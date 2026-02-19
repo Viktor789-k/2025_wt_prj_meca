@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Document{% endblock %}</title>
+    <title>{% block title %}Můj Django Projekt{% endblock %}</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #4CAF50 !important;
+        }
+        footer {
+            background-color: #333;
+        }
+    </style>
 </head>
-<body class="bg-light">
 
-    <!-- 🔹 Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">🌐 Můj Web</a>
+            <a class="navbar-brand fw-bold" href="/">🍀 Django Projekt</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
                     data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,33 +37,31 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="/">Domů</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="/about">O projektu</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 🔹 Hlavní obsah -->
-    <main class="container my-5">
-        <div class="card shadow-sm p-4">
+    <!-- Content -->
+    <main class="container my-5 flex-grow-1">
+        <div class="bg-white p-4 rounded shadow-sm">
             {% block content %}
             {% endblock %}
         </div>
     </main>
 
-    <!-- 🔹 Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <!-- Footer -->
+    <footer class="text-white text-center py-3 mt-auto">
         <div class="container">
-            &copy; 2025 Můj Web | Vytvořeno s Bootstrapem
+            &copy; 2025 Django Projekt
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
